@@ -1,5 +1,24 @@
 {
 	"TOKEN":"token_here",
 	"prefix":"nav ",
-	"owner":"598943183556313109"
+	"owner":"598943183556313109",
+	"description":"Secret project ~~**under naval military scientists**~~. build a submarine to dive in the deep sea **exploring nuclear resources** from the bottom of the Mariana Trough.\n\n__safe and easy__, dive to the sea __without a VPN__. Programed and owned by {{owner}} under the name of *__Santoso__ and __GB_Sources__*.",
+	"color":{
+		"info":"#20a0f0",
+		"warning":"#FFAC33",
+		"danger":"#f05040",
+		"hack":"#6B9913"
+	},
+
+	"usefulLink":[
+		{
+			"name" : "invite",
+			"url" : "https://discordapp.com/oauth2/authorize?client_id={{botId}}&scope=bot&permissions=523328"
+		},
+		{
+			"name" : "Github_repo",
+			"url": "https://github.com/GoruAkiba/simple-master-bot"
+		}
+		
+	]
 }

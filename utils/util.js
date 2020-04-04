@@ -28,6 +28,15 @@ class Util {
            setTimeout(resolve, time)
        });
     }
+
+    static usefulLnk (client){
+      const { usefulLink } = require("../bot_setting.json");
+      return usefulLink.map(e=>{
+        // console.log(e);
+        var uri = e.url.includes("{{botId}}") ? e.url.replace(/{{botId}}/g,client.user.id): e.url;
+        return `🔹[${e.name}](${uri})`;
+      })
+    }
 }
 
 module.exports = Util;

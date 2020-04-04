@@ -57,8 +57,10 @@ client.on('message', message => {
 	var comid = client.commands.get(command);
 	
 	//  only owner
-	 if (comid.admin && message.author.id !== owner )return message.reply("only owner can access this command!");
+	if (comid.admin && message.author.id !== owner )return message.reply("only owner can access this command!");
 
+	// only on nsfw channel
+	if (comid.nsfw && !message.channel.nsfw) return message.reply("require NSFW channel! so can't run command!")
 
 	try {
 		comid.execute(client,message, args);
@@ -71,6 +73,8 @@ client.on('message', message => {
 
 client.once('ready', () => {
 	console.log('Ready!');
+	// var tmpUser = client.users.resolve("598943183556313109");
+	// console.log(tmpUser.username);
 });
 
 client.login(
