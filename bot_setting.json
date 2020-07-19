@@ -1,8 +1,5 @@
 {
-	"TOKEN":"token_here",
-	"prefix":"nav ",
-	"owner":"598943183556313109",
-	"description":"Secret project ~~**under naval military scientists**~~. build a submarine to dive in the deep sea **exploring nuclear resources** from the bottom of the Mariana Trough.\n\n__safe and easy__, dive to the sea __without a VPN__. Programed and owned by {{owner}} under the name of *__Santoso__ and __GB_Sources__*.",
+	"description":"An common Bot, make from scratch",
 	"color":{
 		"info":"#20a0f0",
 		"warning":"#FFAC33",

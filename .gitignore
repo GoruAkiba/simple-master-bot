@@ -1,0 +1,8 @@
+#self
+# .gitignore
+
+#env
+.env
+
+# node module
+node_modules/

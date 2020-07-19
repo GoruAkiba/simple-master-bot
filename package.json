@@ -1,10 +1,10 @@
 {
-  "name": "naval-nuclear-lab",
+  "name": "master-bot",
   "version": "1.0.0",
   "description": "just dumies bot",
   "main": "index.js",
   "scripts": {
-    "dev": "node bin/dev"
+    "dev": "node bin/dev.js"
   },
   "keywords": [
     "discord",
@@ -15,7 +15,7 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "discord.js": "^12.1.1",
-    "request": "^2.88.2"
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "dotenv": "^8.2.0"

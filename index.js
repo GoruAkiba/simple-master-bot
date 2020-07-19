@@ -1,7 +1,9 @@
 const Discord = require('discord.js');
 const botClient = require("./structures/botClient");
 const client = new botClient();
-const {TOKEN, prefix, owner}=require("./bot_setting.json");
+const owner = process.env.Owner;
+const prefix = process.env.Prefix;
+const Token = process.env.Token; 
 
 const fs = require('fs');
 const cmdir = './commands';
@@ -72,11 +74,12 @@ client.on('message', message => {
 });
 
 client.once('ready', () => {
-	console.log('Ready!');
-	// var tmpUser = client.users.resolve("598943183556313109");
-	// console.log(tmpUser.username);
+	console.log(client.user.username+' is Ready!');
 });
 
-client.login(
-	process.env.TOKEN
-	);
+client.login(Token)
+	.then(e=>{
+		require("./webserver.js").execute(client);
+	})
+	.catch(err=>console.log(err));
+	

@@ -12,7 +12,7 @@ module.exports = {
 	admin : true,
 	nsfw : false,
 	async execute(client,message,args){
-		const dt = new Date();
-		return message.channel.send(`pong \`\`${dt - new Date()}ms\`\``);
+		const dt = new Date(message.createdTimestamp);
+		return message.channel.send(`pong \`\`${new Date() - dt}ms\`\` | ws : \`\`${client.ws.ping}ms\`\``);
 	}
 }

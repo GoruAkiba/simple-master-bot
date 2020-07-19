@@ -2,7 +2,8 @@
 const Discord = require('discord.js');
 const fs = require("fs");
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
-const { prefix, owner, description, color } = require("../bot_setting.json");
+const owner = process.env.Owner;
+const prefix = process.env.Prefix;
 
 // export module
 module.exports = {
@@ -14,6 +15,7 @@ module.exports = {
 	admin : false,
 	nsfw : false,
 	async execute(client,message,args){
+		const {description, color} = client.setting;
 		const own = client.users.resolve(owner);
 		var desc = description.replace(/{{owner}}/g,`\`\`${own.tag}\`\``);
 
