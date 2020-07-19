@@ -27,7 +27,7 @@ Owner=your_Discord_id
 
 ## Contributing
 
-- [Fork it!](https://github.com/GoruAkibasimple-master-bot/fork)
+- [Fork it!](https://github.com/GoruAkiba/simple-master-bot/fork)
 - Create your feature branch: ``git checkout -b my-new-feature``
 - Commit your changes: ``git commit -am "Add some feature"``
 - Push to the branch: ``git push origin my-new-feature``
