@@ -4,7 +4,8 @@
   "description": "just dumies bot",
   "main": "index.js",
   "scripts": {
-    "dev": "node bin/dev.js"
+    "dev": "node bin/dev.js",
+    "start": "node ."
   },
   "keywords": [
     "discord",
